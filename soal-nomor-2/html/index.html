@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabel.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/small-screen.css" />
+  </head>
+  <body>
+    <!-- navbar menu -->
+    <ul class="navbar-item">
+      <li>
+        <strong><a href="index.html">Home</a></strong>
+      </li>
+      <li>
+        <strong><a href="harian.html">Harian</a></strong>
+      </li>
+      <li>
+        <strong><a href="#">Mingguan</a></strong>
+      </li>
+      <li>
+        <strong><a href="#">Bulanan</a></strong>
+      </li>
+    </ul>
+
+    <!-- table info pengeluaran, pemasukkan dan saldo -->
+    <table id="info">
+      <tr class="title-info">
+        <th>Pengeluaran</th>
+        <th>Pemasukkan</th>
+        <th>Saldo</th>
+      </tr>
+      <tr class="body-info">
+        <th id="value-pengeluaran">0</th>
+        <th id="value-pemasukkan">0</th>
+        <th id="value-saldo">0</th>
+      </tr>
+    </table>
+
+    <!-- button Input menambah tracking-->
+    <div class="button-area">
+      <button id="button-input">Add</button>
+    </div>
+
+    <!-- show modal untuk menginput tracking -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Input Data</h2>
+        </div>
+        <div class="modal-body">
+          <form id="formInput" method="POST">
+            <label for="tanggal" id="label-tanggal">Tanggal</label>
+            <br />
+            <input type="date" id="tanggal" name="tanggal" />
+            <br />
+
+            <label for="tipe">Tipe</label>
+            <select id="tipe" name="tipe">
+              <option selected>Silahkan pilih tipe</option>
+              <option value="Pemasukkan">Pemasukkan</option>
+              <option value="Pengeluaran">Pengeluaran</option>
+            </select>
+
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori">
+              <option selected>Silahkan pilih kategori</option>
+              <option value="Gaji">Gaji</option>
+              <option value="Makanan">Makanan</option>
+              <option value="Pajak">Pajak</option>
+              <option value="Pakaian">Pakaian</option>
+              <option value="Rumah">Rumah</option>
+              <option value="Lain-lain">Lain-lain</option>
+            </select>
+
+            <label for="jumlah">Jumlah</label>
+            <input type="text" id="jumlah" name="jumlah" />
+            <input
+              type="submit"
+              value="Submit"
+              id="add-data-button"
+              onclick="inputData()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- table -->
+    <table id="budget-track"></table>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

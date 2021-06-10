@@ -1,0 +1,48 @@
+#budget-track, #budget-track-harian {
+    table-layout: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: none;
+  }
+  
+  #budget-track td, #budget-track-harian td,
+  #budget-track th, #budget-track-harian th {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    /* border-style: none; */
+  }
+  
+  #budget-track tr:nth-child(even), #budget-track-harian tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  #budget-track tr:hover, #budget-track-harian tr:hover {
+    background-color: #ddd;
+  }
+  
+  #budget-track th, #budget-track-harian th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+  
+  .button-delete {
+    background-color: #dd0909;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    /* float: right; */
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 10px 0px; */
+    cursor: pointer;
+  }

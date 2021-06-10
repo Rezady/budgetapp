@@ -1,0 +1,32 @@
+@media screen and (max-width: 580px) {
+  body {
+    width: 90%;
+    margin: auto;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .navbar-item li a,
+  #info tr th,
+  #budget-track tr th,
+  #budget-track-harian tr th {
+    font-size: 13px;
+  }
+
+  /* tabel tracking */
+  #budget-track tr td,
+  #budget-track-harian tr td,
+  .button-delete {
+    font-size: 10px;
+  }
+
+  #button-input {
+    font-size: 13px;
+    padding: 8px 13px;
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+
+}

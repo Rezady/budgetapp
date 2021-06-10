@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabel.css" />
+    <link rel="stylesheet" href="../css/small-screen.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <!-- navbar menu -->
+    <ul class="navbar-item">
+      <li>
+        <strong><a href="index.html">Home</a></strong>
+      </li>
+      <li>
+        <strong><a href="harian.html">Harian</a></strong>
+      </li>
+      <li>
+        <strong><a href="#">Mingguan</a></strong>
+      </li>
+      <li>
+        <strong><a href="#">Bulanan</a></strong>
+      </li>
+    </ul>
+
+    <!-- table info pengeluaran, pemasukkan dan saldo -->
+    <table id="info">
+      <tr class="title-info">
+        <th>Pengeluaran Harian</th>
+        <th>Pemasukkan Harian</th>
+        <th>Saldo Harian</th>
+      </tr>
+      <tr class="body-info">
+        <th id="value-pengeluaran">0</th>
+        <th id="value-pemasukkan">0</th>
+        <th id="value-saldo">0</th>
+      </tr>
+    </table>
+    <!-- table -->
+    <table id="budget-track-harian"></table>
+    <script src="../js/harian.js"></script>
+    
+</body>
+</html>
